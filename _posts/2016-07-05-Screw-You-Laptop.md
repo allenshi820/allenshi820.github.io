@@ -4,7 +4,7 @@ title:      "Screw you laptop! Literally!"
 subtitle:   "First rule of engineering: only you repair your electronics!"
 date:       2016-07-05 09:37:00
 author:     "Shikher Verma"
-header-img: "img/posts/screw-laptop-bg.jpg"
+header-img: "img/posts/cheetah.jpg"
 comments: true
 tags: [ CodeMonkey ]
 ---
