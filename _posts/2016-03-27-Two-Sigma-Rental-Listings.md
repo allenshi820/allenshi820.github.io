@@ -18,103 +18,97 @@ The interest level is categorized into three classes - high, medium and low. Let
 
 
 <meta charset="utf-8">
-<style>
 
-
-
-.group-tick line {
-  stroke: #000;
-}
-
-.ribbons {
-  fill-opacity: 0.67;
-}
-
-</style>
 <svg width="960" height="960"></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/4.7.2/d3.min.js"></script>
+<script src="d3pie.min.js"></script>
 <script>
-
-var matrix = [
-  [11975,  5871, 8916, 2868],
-  [ 1951, 10048, 2060, 6171],
-  [ 8010, 16145, 8090, 8045],
-  [ 1013,   990,  940, 6907]
-];
-
-var svg = d3.select("svg"),
-    width = +svg.attr("width"),
-    height = +svg.attr("height"),
-    outerRadius = Math.min(width, height) * 0.5 - 40,
-    innerRadius = outerRadius - 30;
-
-var formatValue = d3.formatPrefix(",.0", 1e3);
-
-var chord = d3.chord()
-    .padAngle(0.05)
-    .sortSubgroups(d3.descending);
-
-var arc = d3.arc()
-    .innerRadius(innerRadius)
-    .outerRadius(outerRadius);
-
-var ribbon = d3.ribbon()
-    .radius(innerRadius);
-
-var color = d3.scaleOrdinal()
-    .domain(d3.range(4))
-    .range(["#000000", "#FFDD89", "#957244", "#F26223"]);
-
-var g = svg.append("g")
-    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
-    .datum(chord(matrix));
-
-var group = g.append("g")
-    .attr("class", "groups")
-  .selectAll("g")
-  .data(function(chords) { return chords.groups; })
-  .enter().append("g");
-
-group.append("path")
-    .style("fill", function(d) { return color(d.index); })
-    .style("stroke", function(d) { return d3.rgb(color(d.index)).darker(); })
-    .attr("d", arc);
-
-var groupTick = group.selectAll(".group-tick")
-  .data(function(d) { return groupTicks(d, 1e3); })
-  .enter().append("g")
-    .attr("class", "group-tick")
-    .attr("transform", function(d) { return "rotate(" + (d.angle * 180 / Math.PI - 90) + ") translate(" + outerRadius + ",0)"; });
-
-groupTick.append("line")
-    .attr("x2", 6);
-
-groupTick
-  .filter(function(d) { return d.value % 5e3 === 0; })
-  .append("text")
-    .attr("x", 8)
-    .attr("dy", ".35em")
-    .attr("transform", function(d) { return d.angle > Math.PI ? "rotate(180) translate(-16)" : null; })
-    .style("text-anchor", function(d) { return d.angle > Math.PI ? "end" : null; })
-    .text(function(d) { return formatValue(d.value); });
-
-g.append("g")
-    .attr("class", "ribbons")
-  .selectAll("path")
-  .data(function(chords) { return chords; })
-  .enter().append("path")
-    .attr("d", ribbon)
-    .style("fill", function(d) { return color(d.target.index); })
-    .style("stroke", function(d) { return d3.rgb(color(d.target.index)).darker(); });
-
-// Returns an array of tick angles and values for a given group and step.
-function groupTicks(d, step) {
-  var k = (d.endAngle - d.startAngle) / d.value;
-  return d3.range(0, d.value, step).map(function(value) {
-    return {value: value, angle: value * k + d.startAngle};
-  });
-}
-
+var pie = new d3pie("pieChart", {
+	"header": {
+		"title": {
+			"text": "Lots of Programming Languages",
+			"fontSize": 24,
+			"font": "open sans"
+		},
+		"subtitle": {
+			"text": "A full pie chart to show off label collision detection and resolution.",
+			"color": "#999999",
+			"fontSize": 12,
+			"font": "open sans"
+		},
+		"titleSubtitlePadding": 9
+	},
+	"footer": {
+		"color": "#999999",
+		"fontSize": 10,
+		"font": "open sans",
+		"location": "bottom-left"
+	},
+	"size": {
+		"canvasWidth": 590,
+		"pieOuterRadius": "77%"
+	},
+	"data": {
+		"sortOrder": "value-desc",
+		"content": [
+			{
+				"label": "Low",
+				"value": 34284,
+				"color": "#4daa4b"
+			},
+			{
+				"label": "High",
+				"value": 3839,
+				"color": "#d41d22"
+			},
+			{
+				"label": "Medium",
+				"value": 11229,
+				"color": "#e6ca0c"
+			}
+		]
+	},
+	"labels": {
+		"outer": {
+			"pieDistance": 33
+		},
+		"inner": {
+			"hideWhenLessThanPercentage": 3
+		},
+		"mainLabel": {
+			"fontSize": 20
+		},
+		"percentage": {
+			"color": "#ffffff",
+			"fontSize": 17,
+			"decimalPlaces": 0
+		},
+		"value": {
+			"color": "#adadad",
+			"fontSize": 20
+		},
+		"lines": {
+			"enabled": true
+		},
+		"truncation": {
+			"enabled": true
+		}
+	},
+	"effects": {
+		"pullOutSegmentOnClick": {
+			"effect": "linear",
+			"speed": 400,
+			"size": 8
+		}
+	},
+	"misc": {
+		"gradient": {
+			"enabled": true,
+			"percentage": 100
+		}
+	}
+});
 </script>
-
 
