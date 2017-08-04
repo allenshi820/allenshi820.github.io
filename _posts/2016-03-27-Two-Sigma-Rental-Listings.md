@@ -14,15 +14,8 @@ Finding a perfect apartment is really diffcult and the whole process should be m
 ## Exploratory data Analysis
 The interest level is categorized into three classes - high, medium and low. Let's first take a look at the geographic distribution of all the listings' interest level.
 
-
-<!DOCTYPE html>
 <meta charset="utf-8">
 <style>
-
-body {
-  font: 10px sans-serif;
-}
-
 .group-tick line {
   stroke: #000;
 }
