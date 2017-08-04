@@ -15,11 +15,8 @@ Finding a perfect apartment is really diffcult and the whole process should be m
 The interest level is categorized into three classes - high, medium and low. Let's first take a look at the geographic distribution of all the listings' interest level.
 
 <center><img src="/img/posts/NY_listings.png" width="650" height="650"></center>
-<html>
-<head></head>
-<body>
 
-<div id="pieChart"></div>
+
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/d3/4.7.2/d3.min.js"></script>
 <script src="d3pie.min.js"></script>
@@ -111,6 +108,4 @@ var pie = new d3pie("pieChart", {
 });
 </script>
 
-</body>
-</html>
 
