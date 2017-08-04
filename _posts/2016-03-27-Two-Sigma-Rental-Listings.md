@@ -19,8 +19,6 @@ The interest level is categorized into three classes - high, medium and low. Let
 
 <meta charset="utf-8">
 
-<svg width="960" height="960"></svg>
-<script src="https://d3js.org/d3.v4.min.js"></script>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/d3/4.7.2/d3.min.js"></script>
 <script src="d3pie.min.js"></script>
