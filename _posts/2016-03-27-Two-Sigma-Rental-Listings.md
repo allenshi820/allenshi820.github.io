@@ -21,7 +21,7 @@ The interest level is categorized into three classes - high, medium and low. Let
 
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/d3/4.7.2/d3.min.js"></script>
-<script src="d3pie.min.js"></script>
+<script src="/_posts/d3pie.min.js"></script>
 <script>
 var pie = new d3pie("pieChart", {
 	"header": {
