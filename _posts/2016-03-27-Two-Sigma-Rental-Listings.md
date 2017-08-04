@@ -16,10 +16,13 @@ The interest level is categorized into three classes - high, medium and low. Let
 
 <center><img src="/img/posts/NY_listings.png" width="650" height="650"></center>
 
-
+<!DOCTYPE html>
 <meta charset="utf-8">
 <style>
 
+body {
+  font: 10px sans-serif;
+}
 
 .group-tick line {
   stroke: #000;
