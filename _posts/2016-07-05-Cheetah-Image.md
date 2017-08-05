@@ -14,5 +14,11 @@ The image on the left is the image that we are trying to segment and the image o
 
 Cheetah Image           |  Ground Truth
 :-------------------------:|:-------------------------:
-<img src="/img/posts/cheetah.png" align="left" width="400" height="400" >  |  <img src="/img/posts/cheetah_mask.png" align="right" width="400" height="400" >
+<img src="/img/posts/cheetah.png" align="left" width="350" height="350" >  |  <img src="/img/posts/cheetah_mask.png" align="right" width="350" height="350" >
+
+## Gaussian Naive Bayes Classifier
+
+The Naive Bayes classifier adopts the Bayesian decision theory, which is just maximum a posteriori estimation.
+
+i^*(x) = \underset{<constraints>}{\operatorname{<argmax>}}
 
