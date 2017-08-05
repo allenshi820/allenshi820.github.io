@@ -29,5 +29,6 @@ $\underset{c\in C}{\operatorname{argmax}}$
 ## Image Processing
 
 ## Feature Selection
-We first performed a discrete fourier transform using blocks of 8x8 pixels and converted transform the 2D array into a 64D feature vector after DFT. The figure below summarizes the process.
+We first performed a discrete fourier transform using blocks of 8x8 pixels and transformed the 2D array into a 64D feature vector after DFT. The figure below summarizes the process.
 <img src="/img/posts/DFT.png" align="middle" width="600" height="450" >
+In the training set, we are provided with these 64 features with "foreground" and "background" labeled. By making the assumption that each of these features has a Gaussian distribution, we estimated their mean and variance through maximum likelihood. In the Gaussian case, the estimated mean and variance are just the sample mean and sample variance. However, a 64 dimensional feature space is huge. To reduce the dimension, we selected the best 8 feature by plotting the "foreground" and "background" feature distributions.
