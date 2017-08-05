@@ -15,3 +15,10 @@ Rules: If a team receives 3 points for a win, 1 point for a draw and 0 point for
 
 ## Goal
 The goal of this project is to predict the total points every team will receive at the end of a season by using the game statistics data scrapped from The Premier League website.
+
+
+## Exploratory Data Analysis
+
+Feature correlation heatmap.
+
+<iframe width="600" height="600" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/30.embed"></iframe>
