@@ -22,3 +22,5 @@ The Naive Bayes classifier adopts the Bayesian decision theory, which is just ma
 
 $i^*(x) = \underset{<constraints>}{\operatorname{<argmax>}}$
 
+$\underset{c\in C}{\operatorname{argmax}}$
+
