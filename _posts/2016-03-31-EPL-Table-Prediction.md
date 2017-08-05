@@ -25,7 +25,7 @@ We also find the correlation between each feature and the target variable "Point
 After the feature selection, only 5 features were left - "Goals Per Match", "Goals Conceded Per Match", "Pass Accuracy %", "Shooting Accuracy %" and "Penalties Scored".
 
 The following pairplot shows the relation of each feature pair and no strong correlation is shown.
-<img src="/img/posts/feature_corr.png" align="center" width="550" height="550" >
+<center><img src="/img/posts/feature_corr.png"  width="570" height="530" ></center>
 
 ## Feature Engineering
 
