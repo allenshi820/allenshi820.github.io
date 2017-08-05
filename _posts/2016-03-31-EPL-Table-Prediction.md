@@ -18,37 +18,7 @@ The goal of this project is to predict the total points every team will receive 
 
 
 ## Feature Selection
-
-The following table shows the features we scrapped from the EPL website.
-
-
-|        Features         |
-| ----------------------  |
-|Aerial Battles/Duels Won |   
-|Big Chances Created      |  
-|Blocked Shots            |  
-|Clean Sheets             |   
-|Clearances               |   
-|Cross Accuracy %         | 
-|Crosses                  |              
-|Goals                    | 
-|Goals Conceded           |
-|Goals Conceded Per Match |  
-|Goals Per Match          | 
-|Headed Clearance         |
-|Hit Woodwork             | 
-|Interceptions            | 
-|Pass Accuracy %          |
-|Passes                   |
-|Passes Per Match         | 
-|Penalties Scored         |
-|Saves                    |
-|Shooting Accuracy %      |
-|Shots                    |
-|Shots On Target          |
-|Tackles                  |
-|Team                     |
-
 In order to determine which features to use, We first plotted the feature correlation heatmap and tried to eliminate features which have a strong correlation with others.
-
 <iframe width="1000" height="1000" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/30.embed"></iframe>
+We also find the correlation between each feature and the target variable "Points" and plotted the heatmap below.
+<iframe width="700" height="600" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/32.embed"></iframe>
