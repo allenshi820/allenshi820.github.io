@@ -48,6 +48,6 @@ The MSE of this model is 113.772.
 
 ## Evaluation
 One of the key assumptions of linear regreesion is that the residual should be normally distributed. To verify ths assumption, we plotted the the residuals and the Q-Q plot below.
-<center><img src="/img/posts/eval.png"  width="570" height="530" ></center>
+<center><img src="/img/posts/eval.png"  width="700" height="500" ></center>
 As the Q-Q plot indicates, most of the residuals lie along a line the distribution has the same shape as the theoretical distribution we have supposed.
 
