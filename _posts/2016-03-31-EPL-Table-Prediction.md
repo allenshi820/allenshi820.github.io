@@ -44,3 +44,10 @@ As the above two figures show, the best alpha of our model is 1.55.
 ## Prediction
 We predicted the total points each team will received of season 2016-2017 using a ridge regression model. The figure below shows the actual points and the predicted points.
 <iframe width="900" height="500" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/40.embed"></iframe>
+The MSE of this model is 113.772.
+
+## Evaluation
+One of the key assumptions of linear regreesion is that the residual should be normally distributed. To verify ths assumption, we plotted the the residuals and the Q-Q plot below.
+<center><img src="/img/posts/eval.png"  width="570" height="530" ></center>
+As the Q-Q plot indicates, most of the residuals lie along a line the distribution has the same shape as the theoretical distribution we have supposed.
+
