@@ -20,5 +20,9 @@ The goal of this project is to predict the total points every team will receive 
 ## Feature Selection
 In order to determine which features to use, We first plotted the feature correlation heatmap and tried to eliminate features which have a strong correlation with others.
 <iframe width="750" height="750" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/30.embed"></iframe>
-We also find the correlation between each feature and the target variable "Points" and plotted the heatmap below.
+We also find the correlation between each feature and the target variable "Points" and eliminated features which have a correlation value less than 0.4.
 <iframe width="850" height="600" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/32.embed"></iframe>
+After the feature selection, only 5 features were left - "Goals Per Match", "Goals Conceded Per Match", "Pass Accuracy %", "Shooting Accuracy %" and "Penalties Scored".
+
+The following pairplot shows the relation of each feature pair and no strong correlation is shown.
+<img src="/img/posts/feature_corr.png" align="middle" width="350" height="350" >
