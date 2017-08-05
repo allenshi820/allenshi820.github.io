@@ -29,6 +29,6 @@ The following pairplot shows the relation of each feature pair and no strong cor
 
 ## Feature Engineering
 A club is considered as a successful club if it made appearance in EPL more than 6 seasons in the last 11 years. We counted the appearances of every club in the last 11 years and selected the top 7 clubs to be successful clubs. We created another feature "Successful Club" to indicate whether or not a club is successful.
-<center><img src="/img/posts/appearances.png"  width="570" height="530" ></center>
+<center><img src="/img/posts/appearances.png"  width="520" height="530" ></center>
 
 
