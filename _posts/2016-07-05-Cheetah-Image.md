@@ -13,3 +13,6 @@ The goal is to segment the “cheetah” image (shown below in the left) into it
 The image on the left is the image that we are trying to segment and the image on the right is the ground truth.
 <img src="/img/posts/cheetag.jpg" align="left">
 <img src="/img/posts/cheetag_mask.jpg" align="right">
+
+
+![Clean Blog](/img/posts/cheetag.jpg)
