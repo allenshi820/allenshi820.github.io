@@ -19,6 +19,6 @@ The goal of this project is to predict the total points every team will receive 
 
 ## Feature Selection
 In order to determine which features to use, We first plotted the feature correlation heatmap and tried to eliminate features which have a strong correlation with others.
-<iframe width="800" height="800" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/30.embed"></iframe>
+<iframe width="750" height="750" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/30.embed"></iframe>
 We also find the correlation between each feature and the target variable "Points" and plotted the heatmap below.
-<iframe width="1000" height="600" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/32.embed"></iframe>
+<iframe width="850" height="600" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/32.embed"></iframe>
