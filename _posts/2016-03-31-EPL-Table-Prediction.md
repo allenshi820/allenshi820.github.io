@@ -33,5 +33,7 @@ A club is considered as a successful club if it made appearance in EPL more than
 
 ## Model Selection
 In this project, we dediced to use Linear Regression as our model to predict the total points that a team will receive by the end of a season. We first performed grid search on the degree of a polynomial and plotted the corresponding mean square error(MSE) and R-squared value.
-<iframe width="800" height="400" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/36.embed"></iframe>
+<iframe width="1000" height="450" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/36.embed"></iframe>
+
+<iframe width="1000" height="450" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/38.embed"></iframe>
 
