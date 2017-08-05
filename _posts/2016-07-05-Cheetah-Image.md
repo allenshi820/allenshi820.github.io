@@ -15,3 +15,7 @@ The image on the left is the image that we are trying to segment and the image o
 <img src="/img/posts/cheetah.png" align="left" width="300" height="300" ><img/><img src="/img/posts/cheetah_mask.png" align="right" width="300" height="300" >
 
 
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+<img src="/img/posts/cheetah.png" align="left" width="300" height="300" >  |  <img src="/img/posts/cheetah_mask.png" align="right" width="300" height="300" >
+
