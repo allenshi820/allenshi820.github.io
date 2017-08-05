@@ -15,5 +15,7 @@ Finding a perfect apartment is really diffcult and the whole process should be m
 The interest level is categorized into three classes - high, medium and low. Let's first take a look at the geographic distribution of all the listings' interest level.
 <iframe width="700" height="600" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/24.embed"></iframe>
 
+<iframe width="700" height="600" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/26.embed"></iframe>
+
 
 
