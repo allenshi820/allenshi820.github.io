@@ -20,12 +20,11 @@ The goal of this project is to predict the total points every team will receive 
 ## Feature Selection
 
 The following table shows the features we scrapped from the EPL website.
-| Features      |
-| ------------- |
-| col 3 is      | 
-| col 2 is      | 
-| zebra stripes |
-
+| Are           |
+|:-------------:|
+| right-aligned |
+| centered      | 
+| are neat      | 
 In order to determine which features to use, We first plotted the feature correlation heatmap and tried to eliminate features which have a strong correlation with others.
 
 <iframe width="1000" height="1000" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/30.embed"></iframe>
