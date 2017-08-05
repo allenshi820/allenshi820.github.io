@@ -43,4 +43,4 @@ As the above two figures show, the best alpha of our model is 1.55.
 
 ## Prediction
 We predicted the total points each team will received of season 2016-2017 using a ridge regression model. The figure below shows the actual points and the predicted points.
-<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/40.embed"></iframe>
+<iframe width="900" height="500" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/40.embed"></iframe>
