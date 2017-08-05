@@ -47,4 +47,5 @@ Best 8 Features         |  Worst 8 Features
 To segment the image, we first performed DCT using a sliding window on the input cheetah image and calculated the probabily of foreground and background for each block. In the next step, the model classified each block into either foreground or background using the Bayesian Decision Theorem as described above.
 
 The following image shows the result after segementation.
-<img src="/img/posts/mask.png" align="middle" width="440" height="320" >
+
+<img src="/img/posts/mask.png" align="middle" width="420" height="300" >
