@@ -24,3 +24,4 @@ $i^*(x) = \underset{<constraints>}{\operatorname{<argmax>}}$
 
 $\underset{c\in C}{\operatorname{argmax}}$
 
+\alpha
