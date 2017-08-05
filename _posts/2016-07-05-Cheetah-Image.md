@@ -20,5 +20,5 @@ Cheetah Image           |  Ground Truth
 
 The Naive Bayes classifier adopts the Bayesian decision theory, which is just maximum a posteriori estimation.
 
-i^*(x) = \underset{<constraints>}{\operatorname{<argmax>}}
+$i^*(x) = \underset{<constraints>}{\operatorname{<argmax>}}$
 
