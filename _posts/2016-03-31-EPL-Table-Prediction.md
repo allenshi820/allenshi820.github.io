@@ -33,11 +33,11 @@ A club is considered as a successful club if it made appearance in EPL more than
 
 ## Model Selection
 In this project, we dediced to use linear regression as our model to predict the total points that a team will receive by the end of a season. We first performed grid search on the degree of a polynomial and plotted the corresponding mean square error(MSE) and R-squared value.
-<iframe width="1000" height="450" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/36.embed"></iframe>
+<iframe width="1000" height="450" align="left" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/36.embed"></iframe>
 
 In linear regression, the higer the magnitude of the coefficient is, the more complex the model becomes. To penalize model complexity, we performed regularization on our model by grid searching the best alpha parameter. 
 ******explanation of the alpha parameter***********
-<iframe width="1000" height="450" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/38.embed"></iframe>
+<iframe width="1000" height="450" align="left" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/38.embed"></iframe>
 
 As the above two figures show, the best alpha of our model is 1.55.
 
