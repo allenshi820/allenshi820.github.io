@@ -29,12 +29,12 @@ $\underset{c\in C}{\operatorname{argmax}}$
 ## Image Processing
 We first performed a discrete fourier transform using blocks of 8x8 pixels and transformed the 2D array into a 64D feature vector after DFT. The figure below summarizes the process.
 
-<img src="/img/posts/DFT.png" align="middle" width="600" height="450" >
+<center><img src="/img/posts/DFT.png" width="600" height="450" ></center>
 
 ## Feature Selection
 In the training set, we are provided with these 64 features with "foreground" and "background" labeled. By making the assumption that each of these features has a Gaussian distribution, we estimated their mean and variance through maximum likelihood. In the Gaussian case, the estimated mean and variance are just the sample mean and sample variance. However, a 64 dimensional feature space is huge. To reduce the dimension, we selected the best 8 feature by plotting the "foreground" and "background" feature distributions, where the blue curve is background and orange curve is foreground.
 
-<img src="/img/posts/64_feats.png" align="middle" width="600" height="450" >
+<center><img src="/img/posts/64_feats.png" width="600" height="450" ></center>
 
 The rule of thumb in feature selection is to select features whose background distribution and foreground distribution are far apart. We plotted the best and worst 8 features below.
 
@@ -47,5 +47,4 @@ Best 8 Features         |  Worst 8 Features
 To segment the image, we first performed DCT using a sliding window on the input cheetah image and calculated the probabily of foreground and background for each block. In the next step, the model classified each block into either foreground or background using the Bayesian Decision Theorem as described above.
 
 The following image shows the result after segementation.
-
-<img src="/img/posts/mask.png" align="middle" width="420" height="300" >
+<center><img src="/img/posts/mask.png" width="420" height="300" ></center>
