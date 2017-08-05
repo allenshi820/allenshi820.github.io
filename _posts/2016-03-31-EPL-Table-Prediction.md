@@ -17,8 +17,15 @@ Rules: If a team receives 3 points for a win, 1 point for a draw and 0 point for
 The goal of this project is to predict the total points every team will receive at the end of a season by using the game statistics data scrapped from The Premier League website.
 
 
-## Exploratory Data Analysis
+## Feature Selection
 
-Feature correlation heatmap.
+The following table shows the features we scrapped from the EPL website.
+| Features      |
+| ------------- |
+| col 3 is      | 
+| col 2 is      | 
+| zebra stripes |
+
+In order to determine which features to use, We first plotted the feature correlation heatmap and tried to eliminate features which have a strong correlation with others.
 
 <iframe width="1000" height="1000" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/30.embed"></iframe>
