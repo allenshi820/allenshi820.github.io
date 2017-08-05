@@ -21,4 +21,4 @@ The goal of this project is to predict the total points every team will receive 
 
 Feature correlation heatmap.
 
-<iframe width="600" height="600" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/30.embed"></iframe>
+<iframe width="1000" height="1000" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/30.embed"></iframe>
