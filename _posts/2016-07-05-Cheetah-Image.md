@@ -25,3 +25,9 @@ $i^*(x) = \underset{<constraints>}{\operatorname{<argmax>}}$
 $\underset{c\in C}{\operatorname{argmax}}$
 
 \alpha
+
+## Image Processing
+
+## Feature Selection
+We first performed a discrete fourier transform using blocks of 8x8 pixels and converted transform the 2D array into a 64D feature vector after DFT. The figure below summarizes the process.
+<img src="/img/posts/DFT.png" align="left" width="450" height="450" >
