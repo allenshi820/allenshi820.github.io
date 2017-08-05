@@ -15,4 +15,3 @@ The image on the left is the image that we are trying to segment and the image o
 <img src="/img/posts/cheetag_mask.jpg" align="right">
 
 
-![Clean Blog](/img/posts/cheetag.jpg)
