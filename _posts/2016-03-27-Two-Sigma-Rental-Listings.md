@@ -56,6 +56,6 @@ To deal with imbalanced data, we eliminated some of the listings with low intere
 
 </center>
 
-
+The final model achieved an accuracy of 0.66 and a Log Loss of 0.73.
 
 
