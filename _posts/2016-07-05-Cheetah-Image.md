@@ -20,11 +20,11 @@ Cheetah Image           |  Ground Truth
 
 The Naive Bayes classifier adopts the Bayesian decision theory, which is just maximum a posteriori estimation.
 
-<center><img src="/img/posts/BDR1.png" width="250" height="80" ></center>
+<center><img src="/img/posts/BDR1.png" width="330" height="80" ></center>
 
 In our problem, i indicates the binary classes - foreground and background. The equation above can be rewritten into the equation below based on Bayes rule.
 
-<center><img src="/img/posts/BDR2.png" width="250" height="80" ></center>
+<center><img src="/img/posts/BDR2.png" width="330" height="80" ></center>
 
 We assumed that the likelihood function has a Gaussian distribution.
 
