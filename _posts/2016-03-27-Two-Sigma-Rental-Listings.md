@@ -28,9 +28,9 @@ We took the same approach above to assign prior probablity to managers who manag
 
 ### 3. Feature - Created Time and Date
 We converted the feature "created time and date" of each listing into 3 numerical features - "created month", "created hour" and "created day of week". The following 3 figures show the interestl level distribution based on the 3 features.
-<center><img src="/img/posts/DoW.png" width="475" height="325" ></center>
-<center><img src="/img/posts/Hour.png" width="475" height="325" ></center>
-<center><img src="/img/posts/month.png" width="475" height="325" ></center>
+<center><img src="/img/posts/DoW.png" width="485" height="325" ></center>
+<center><img src="/img/posts/Hour.png" width="485" height="325" ></center>
+<center><img src="/img/posts/month.png" width="485" height="325" ></center>
 
 ### 4. Feature - Feature Descriptions
 Our first attemp was to try to identify keywords in listings with different interest levels. To do that, we counted the word frequency and plotted 3 wordclouds with 3 different interest levels. However, most of the high-frequency words were the same in 3 interest levels as the 3 wordclouds show below.
@@ -44,4 +44,12 @@ In EDA, we observed that in some area, such as Midtown East, the chance of inter
 <iframe width="700" height="600" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/44.embed"></iframe>
 
 ## Model Selection
+To deal with imbalanced data, we eliminated some of the listings with low interest level. Our goal was to optomize the F1 score, which is the weighted average of Precision and Recall, since we had balanced data. We tested the performance of Support Vector Machine, Random Forest, XGBoost and an ensemble model of the three and XGBoost gave us the best performance in terms of F1 score and Log Loss. The table below summarizes the performance of XGBoost.
+                  |    precision    |     recall     |     f1-score    |    support   |
+:----------------:|:---------------:|:--------------:|:----------------|:--------------:
+      high        |                 |                |                 |               |
+      low         |                 |                |                 |               |
+      medium      |                 |                |                 |               |
+     avg/total    |                 |                |                 |               |
+       
 
