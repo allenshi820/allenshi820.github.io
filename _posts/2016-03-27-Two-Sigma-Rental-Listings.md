@@ -13,7 +13,7 @@ Finding a perfect apartment is really diffcult and the whole process should be m
 
 $\alpha$
 
-$/alpha$
+$\sum$
 
 ## Exploratory Data Analysis
 The interest level is categorized into three classes - high, medium and low. Let's first take a look at the geographic distribution of all the listings' interest level.
