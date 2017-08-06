@@ -21,6 +21,7 @@ Cheetah Image           |  Ground Truth
 The Naive Bayes classifier adopts the Bayesian decision theory, which is just maximum a posteriori estimation.
 
 <center><img src="/img/posts/BDR1.png" align="left" ></center>
+<br/>
 
 
 
