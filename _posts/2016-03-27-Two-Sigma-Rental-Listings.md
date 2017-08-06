@@ -6,18 +6,13 @@ date:       2017-08-1 17:00:00
 author:     "Allen Shi"
 header-img: "img/posts/rental-listings.jpg"
 comments: true
+use_math: true
 ---
 
 ## Goal
 Finding a perfect apartment is really diffcult and the whole process should be more than just browsing through endless listings. To better solve this problem and unleash potential business opportunity, I built a model to predict New York rental listings interst level by using the dataset released by RentHop.
 
-$$
-\begin{align}
-\mbox{Union: } & A\cup B = \{x\mid x\in A \mbox{ or } x\in B\} \\
-\mbox{Concatenation: } & A\circ B  = \{xy\mid x\in A \mbox{ and } y\in B\} \\
-\mbox{Star: } & A^\star  = \{x_1x_2\ldots x_k \mid  k\geq 0 \mbox{ and each } x_i\in A\} \\
-\end{align}
-$$
+$$ \alpha $$
 
 $ \alpha $
 
