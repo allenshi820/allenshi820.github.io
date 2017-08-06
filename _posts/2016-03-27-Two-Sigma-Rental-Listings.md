@@ -37,8 +37,11 @@ Our first attemp was to try to identify keywords in listings with different inte
 <center><img src="/img/posts/high.png" width="525" height="325" ></center>
 <center><img src="/img/posts/medium.png" width="525" height="325" ></center>
 <center><img src="/img/posts/low.png" width="525" height="325" ></center>
-In order to perform a more detailed sentiment analysis, we used to bag-of-words to simply the text feature representation by converting a collection of text documents to a matrix of token counts. To retrieve only the valuable information from the token counts, we also calculated the term frequency–inverse document frequency(tf-idf) scores for each token count. Therefore, we were able to use the finalized tf-idf score matrix as our features when we performed classification.
+In order to perform a more detailed sentiment analysis, we used bag-of-words to simply the text feature representation by converting a collection of text documents to a matrix of token counts. To retrieve only the valuable information from the token counts, we also calculated the term frequency–inverse document frequency(tf-idf) scores for each token count. Therefore, we were able to use the finalized tf-idf score matrix as our features when we performed classification.
 
 #### 5. Feature - Latitude & Longitude
 In EDA, we observed that in some area, such as Midtown East, the chance of interest level being high is a lot higher than other areas. In order to take this observation into account, we used the latitude and longitude to calcuate the distance between each listing to the center of New York and then clustered all the rental listings into 5 clusters. The following figure shows the result of clustering.
 <iframe width="700" height="600" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/44.embed"></iframe>
+
+## Model Selection
+
