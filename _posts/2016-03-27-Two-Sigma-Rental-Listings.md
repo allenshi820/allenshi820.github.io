@@ -34,6 +34,6 @@ We converted the feature "created time and date" of each listing into 3 numerica
 
 #### 4. Feature - Feature Descriptions
 Our first attemp was to try to identify keywords in listings with different interest levels. To do that, we counted the word frequency and plotted 3 wordclouds with 3 different interest levels. However, most of the high-frequency words were the same in 3 interest levels as the 3 wordclouds show below.
-<center><img src="/img/posts/high.png" width="475" height="325" ></center>
-<center><img src="/img/posts/medium.png" width="475" height="325" ></center>
-<center><img src="/img/posts/low.png" width="475" height="325" ></center>
+<center><img src="/img/posts/high.png" width="500" height="325" ></center>
+<center><img src="/img/posts/medium.png" width="500" height="325" ></center>
+<center><img src="/img/posts/low.png" width="500" height="325" ></center>
