@@ -58,4 +58,9 @@ To deal with imbalanced data, we eliminated some of the listings with low intere
 
 The final model achieved an accuracy of 0.66 and a Log Loss of 0.73.
 
+We also examined the performance by plotting the receiver operating characteristic curve that illustrates the diagnostic ability. In general, the larger the AUC(Area Under Curve), the better the model performs.
+
+<center><img src="/img/posts/ROC.png" width="500" height="500" ></center>
+
+
 
