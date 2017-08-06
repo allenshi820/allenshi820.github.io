@@ -20,7 +20,14 @@ As the map shows above, most of the listings with low interest level are centere
 The pie chart below shows the distrbution of all the listings according to their interest level.
 <iframe width="500" height="400" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/26.embed"></iframe>
 
-### Feature Analysis - Manager ID
+#### 1. Feature - Building ID
+To transfer the building ID feature into a feature that can be implemented into our model, we first focused on 600 buildings with 15 units or more. Within each building, we calculated and assigned the prior probability of the 3 interest levels.
 
+#### 2. Feature - Manager ID
+We took the same approach above to assign prior probablity to managers who manage 15 apartments or more.
 
-
+#### 3. Feature - Created Time and Date
+We converted the feature "created time and date" of each listing into 3 numerical features - "created month", "created hour" and "created day of week". The following 3 figures show the interestl level distribution based on the 3 features.
+<center><img src="/img/posts/DoW.png" width="600" height="450" ></center>
+<center><img src="/img/posts/Hour.png" width="600" height="450" ></center>
+<center><img src="/img/posts/month.png" width="600" height="450" ></center>
