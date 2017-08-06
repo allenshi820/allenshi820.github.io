@@ -12,9 +12,6 @@ use_math: true
 ## Goal
 Finding a perfect apartment is really diffcult and the whole process should be more than just browsing through endless listings. To better solve this problem and unleash potential business opportunity, I built a model to predict New York rental listings interst level by using the dataset released by RentHop.
 
-$$\alpha$$
-
-$ \alpha $
 $ \beta $
 
 ## Exploratory Data Analysis
