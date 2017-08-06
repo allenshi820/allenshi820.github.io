@@ -19,7 +19,7 @@ $$
 \end{align}
 $$
 
-$$ \alpha $$
+$ \alpha $
 
 
 ## Exploratory Data Analysis
