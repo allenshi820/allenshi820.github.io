@@ -29,7 +29,7 @@ collections:
 wpm: 150
 
 # Build settings
-markdown: kramdown
+markdown: maruku
 highlighter: rouge
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 port: 8888
@@ -40,4 +40,4 @@ paginate: 5
 paginate_path: blog/page:num
 
 # gem dependencies
-gems: [jekyll-paginate, jekyll-feed, jekyll-gist, kramdown]
+gems: [jekyll-paginate, jekyll-feed, jekyll-gist]
