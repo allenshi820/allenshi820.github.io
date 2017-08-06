@@ -8,10 +8,6 @@ layout: page
   <p>{{ page.content }}</p>
 {% endunless %}
 
-{% if page.use_math %}
-  {% include mathjax_support %}
-{% endif %}
-
 {% unless site.tags[page.tag] | size > 0 %}
   <p>No posts found.</p>
 {% endunless %}
