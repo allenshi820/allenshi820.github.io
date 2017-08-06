@@ -36,7 +36,7 @@ In this project, we dediced to use linear regression as our model to predict the
 <iframe width="1000" height="450" align="left" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/36.embed"></iframe>
 
 In linear regression, the higer the magnitude of the coefficient is, the more complex the model becomes. To penalize model complexity, we performed L2 regularization on our model by grid searching the best alpha parameter which is the regularization strength. The L2 regularization adds an extra term to the objective function. The larger the alpha is, the more we penalize the model with large coefficients.
-<center><img src="/img/posts/obj.png"  width="520" height="530" ></center>
+<center><img src="/img/posts/obj.png"  width="200" height="80" ></center>
 
 
 
