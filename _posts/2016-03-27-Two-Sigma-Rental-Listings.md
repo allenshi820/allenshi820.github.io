@@ -37,3 +37,5 @@ Our first attemp was to try to identify keywords in listings with different inte
 <center><img src="/img/posts/high.png" width="525" height="325" ></center>
 <center><img src="/img/posts/medium.png" width="525" height="325" ></center>
 <center><img src="/img/posts/low.png" width="525" height="325" ></center>
+In order to perform a more detailed sentiment analysis, we used to bag-of-words to simply the text feature representation by converting a collection of text documents to a matrix of token counts. To retrieve only the valuable information from the token counts, we also calculated the term frequency–inverse document frequency(tf-idf) scores for each token count. Therefore, we were able to use the finalized tf-idf score matrix as our features when we performed classification.
+
