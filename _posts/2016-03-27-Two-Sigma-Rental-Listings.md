@@ -45,6 +45,7 @@ In EDA, we observed that in some area, such as Midtown East, the chance of inter
 
 ## Model Selection
 To deal with imbalanced data, we eliminated some of the listings with low interest level. Our goal was to optomize the F1 score, which is the weighted average of Precision and Recall, since we had balanced data. We tested the performance of Support Vector Machine, Random Forest, XGBoost and an ensemble model of the three and XGBoost gave us the best performance in terms of F1 score and Log Loss. The table below summarizes the performance of XGBoost.
+<center>
 
 |          |  precision    |  recall |   f1-score  | support |
 |----------|:-------------:|---------:|-----------:|--------:|
@@ -53,6 +54,7 @@ To deal with imbalanced data, we eliminated some of the listings with low intere
 |  meidum  |  0.57 | 0.67 |  0.62  |  603  |
 |avg/total |  0.65 | 0.65 |  0.65  |  1510 |
 
+</center>
 
 
 
