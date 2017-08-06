@@ -28,6 +28,6 @@ We took the same approach above to assign prior probablity to managers who manag
 
 #### 3. Feature - Created Time and Date
 We converted the feature "created time and date" of each listing into 3 numerical features - "created month", "created hour" and "created day of week". The following 3 figures show the interestl level distribution based on the 3 features.
-<center><img src="/img/posts/DoW.png" width="430" height="350" ></center>
-<center><img src="/img/posts/Hour.png" width="430" height="350" ></center>
-<center><img src="/img/posts/month.png" width="430" height="350" ></center>
+<center><img src="/img/posts/DoW.png" width="450" height="325" ></center>
+<center><img src="/img/posts/Hour.png" width="450" height="325" ></center>
+<center><img src="/img/posts/month.png" width="450" height="325" ></center>
