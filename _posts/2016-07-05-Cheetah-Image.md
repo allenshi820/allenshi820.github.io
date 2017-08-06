@@ -19,12 +19,12 @@ Cheetah Image           |  Ground Truth
 ## Gaussian Naive Bayes Classifier
 
 The Naive Bayes classifier adopts the Bayesian decision theory, which is just maximum a posteriori estimation.
+<center><img src="/img/posts/BDR1.png" align="left" width="350" height="350" ></center>
+In our problem, i indicates the binary classes - foreground and background. The equation above can be rewritten into the equation below based on Bayes rule.
+<center><img src="/img/posts/BDR2.png" align="left" width="350" height="350" ></center>
+In our problem, we assumed that the likelihood function has a Gaussian distribution.
 
-$i^*(x) = \underset{<constraints>}{\operatorname{<argmax>}}$
 
-$\underset{c\in C}{\operatorname{argmax}}$
-
-\alpha
 
 ## Image Processing
 We first performed a discrete fourier transform using blocks of 8x8 pixels and transformed the 2D array into a 64D feature vector after DFT. The figure below summarizes the process.
