@@ -24,7 +24,7 @@ The Naive Bayes classifier adopts the Bayesian decision theory, which is just ma
 
 In our problem, i indicates the binary classes - foreground and background. The equation above can be rewritten into the equation below based on Bayes rule.
 
-<center><img src="/img/posts/BDR2.png" width="365" height="80" ></center>
+<center><img src="/img/posts/BDR2.png" width="375" height="70" ></center>
 
 We assumed that the likelihood function has a Gaussian distribution.
 
