@@ -17,15 +17,28 @@ Let's first take a look at what features are available to us. For this dataset, 
 - Number of Bedrooms
 - Number of Bathrooms
 - Building ID
-- Create
+- Created Date and Time
+- Description
+- Display Address
+- Features
+- Latitude and Longitude
+- Photos URLs
+- Price
+- Street Address
 
 ## Exploratory Data Analysis
-The interest level is categorized into three classes - high, medium and low. Let's first take a look at the geographic distribution of all the listings' interest level.
+Now let's explore the dataset further and see if there's anything interesting that we could capture. 
+
+### 1. Responsible Variable - Interest Level
+The interest level is categorized into three classes - high, medium and low. The geographic distribution of all the listings' interest level is shown below.
 <iframe width="700" height="600" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/24.embed"></iframe>
-As the map shows above, most of the listings with low interest level are centered in Manhattan area whereas the apartments with high and medium interest levels are distributed across the Queens, Brooklyn and Bronx.
+As the map shows above, most of the listings with low interest level are centered in Manhattan area whereas the apartments with high and medium interest levels are distributed across the Queens, Brooklyn and Bronx. As we can see, the dataset contains outliers - listings in Massachusetts, Pennsylvania and etc. Since our interest is to predict the interest level in New York City, we can remove these outliers by specifying -74.05 < Longitude < -73.80 and 40.6 < Latitude < 40.9.
 
 The pie chart below shows the distrbution of all the listings according to their interest level.
 <iframe width="500" height="400" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/26.embed"></iframe>
+### 2. Feature - Price
+Here we plot the price distribution with outliers removed beyond the 99% percentile.
+<center><img src="/img/posts/price_dist.png" width="485" height="325" ></center>
 
 ### 1. Feature - Building ID
 To transfer the building ID feature into a feature that can be implemented into our model, we first focused on 600 buildings with 15 units or more. Within each building, we calculated and assigned the prior probability of the 3 interest levels.
@@ -49,6 +62,8 @@ In order to perform a more detailed sentiment analysis, we used bag-of-words to 
 ### 5. Feature - Latitude & Longitude
 In EDA, we observed that in some area, such as Midtown East, the chance of interest level being high is a lot higher than other areas. In order to take this observation into account, we used the latitude and longitude to calcuate the distance between each listing to the center of New York and then clustered all the rental listings into 5 clusters. The following figure shows the result of clustering.
 <iframe width="700" height="600" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/44.embed"></iframe>
+
+## Feature Engineering
 
 ## Model Selection
 To deal with imbalanced data, we eliminated some of the listings with low interest level. Our goal was to optomize the F1 score, which is the weighted average of Precision and Recall, since we had balanced data. We tested the performance of Support Vector Machine, Random Forest, XGBoost and an ensemble model of the three and XGBoost gave us the best performance in terms of F1 score and Log Loss. The table below summarizes the performance of XGBoost.
