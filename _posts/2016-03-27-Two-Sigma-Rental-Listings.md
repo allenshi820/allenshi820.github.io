@@ -14,9 +14,9 @@ Finding a perfect apartment is really diffcult and the whole process should be m
 ## Features
 Let's first take a look at what features are available to us. For this dataset, we have:
 
-1.Number of Bedrooms \\
-2.Number of Bathrooms \\
-3.. Building ID \\
+1.Number of Bedrooms
+2.Number of Bathrooms
+3.. Building ID
 4. Create \\
 
 ## Exploratory Data Analysis
