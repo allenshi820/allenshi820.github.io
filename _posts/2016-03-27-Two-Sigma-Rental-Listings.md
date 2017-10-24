@@ -11,6 +11,13 @@ comments: true
 ## Goal
 Finding a perfect apartment is really diffcult and the whole process should be more than just browsing through endless listings. To better solve this problem and unleash potential business opportunity, I built a model to predict New York rental listings interst level by using the dataset released by RentHop.
 
+## Features
+Let's first take a look at what features are available to us. For this dataset, we have:
+
+#1.Number of Bedrooms
+#2.Number of Bathrooms
+#3. Building ID
+#4. Create
 
 ## Exploratory Data Analysis
 The interest level is categorized into three classes - high, medium and low. Let's first take a look at the geographic distribution of all the listings' interest level.
