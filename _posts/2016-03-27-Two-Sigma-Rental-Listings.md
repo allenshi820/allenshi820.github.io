@@ -31,13 +31,17 @@ Now let's explore the dataset further and see if there's anything interesting th
 
 ### 1. Responsible Variable - Interest Level
 The interest level is categorized into three classes - high, medium and low. The geographic distribution of all the listings' interest level is shown below.
+
 <iframe width="700" height="600" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/24.embed"></iframe>
+
 As the map shows above, most of the listings with low interest level are centered in Manhattan area whereas the apartments with high and medium interest levels are distributed across the Queens, Brooklyn and Bronx. As we can see, the dataset contains outliers - listings in Massachusetts, Pennsylvania and etc. Since our interest is to predict the interest level in New York City, we can remove these outliers by specifying -74.05 < Longitude < -73.80 and 40.6 < Latitude < 40.9.
 
 The pie chart below shows the distrbution of all the listings according to their interest level.
 <iframe width="500" height="400" frameborder="0" scrolling="no" src="//plot.ly/~a98051827/26.embed"></iframe>
+
 ### 2. Feature - Price
 Here we plot the price distribution with outliers removed beyond the 99% percentile.
+
 <center><img src="/img/posts/price_dist.png" width="485" height="325" ></center>
 
 ### 1. Feature - Building ID
