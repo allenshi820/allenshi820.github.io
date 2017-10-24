@@ -14,10 +14,10 @@ Finding a perfect apartment is really diffcult and the whole process should be m
 ## Features
 Let's first take a look at what features are available to us. For this dataset, we have:
 
-1.Number of Bedrooms
-2.Number of Bathrooms
-3.. Building ID
-4. Create \\
+- Number of Bedrooms
+- Number of Bathrooms
+- Building ID
+- Create
 
 ## Exploratory Data Analysis
 The interest level is categorized into three classes - high, medium and low. Let's first take a look at the geographic distribution of all the listings' interest level.
